@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Recommendation App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Welcome to Movie Recommendation App</h1>
+    <form method="POST">
+        <label for="genre">Select a genre:</label>
+        <select id="genre" name="genre">
+            <option value="0">Unknown</option>
+            <option value="1">Action</option>
+            <option value="2">Adventure</option>
+            <option value="3">Animation</option>
+            <option value="4">Children's</option>
+            <option value="5">Comedy</option>
+            <option value="6">Crime</option>
+            <option value="7">Documentary</option>
+            <option value="8">Drama</option>
+            <option value="9">Fantasy</option>
+            <option value="10">Film-Noir</option>
+            <option value="11">Horror</option>
+            <option value="12">Musical</option>
+            <option value="13">Mystery</option>
+            <option value="14">Romance</option>
+            <option value="15">Sci-Fi</option>
+            <option value="16">Thriller</option>
+            <option value="17">War</option>
+            <option value="18">Western</option>
+        </select>
+        <input type="submit" value="Get Recommendations">
+    </form>
+</body>
+</html>
