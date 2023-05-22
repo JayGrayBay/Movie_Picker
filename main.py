@@ -25,7 +25,7 @@ def home():
     return render_template('home.html')
 
 def get_movie_details(title, year):
-    api_key = "89cdef23"  # replace with your OMDb API key
+    api_key = "{YOUR_API_KEY}"  # replace with your OMDb API key
     url = f"http://www.omdbapi.com/?apikey={api_key}&t={title}&y={year}&plot=short&r=json"
     response = requests.get(url)
     data = json.loads(response.text)
